@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sayem.geeknot.taskscheduler.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/ename"
+            android:hint="@string/enter_task_name"
+            android:textColorHint="#838383"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/bdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_date"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+
+            <EditText
+                android:id="@+id/edate"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:hint="@string/date_format"
+                android:editable="false"
+                android:textColorHint="#838383"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_Add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/add"
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:onClick="addToTasklist"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingEnd="15dp"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task Scheduler</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_date">Task Date</string>
+    <string name="saved_date">Saved Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="add">Add To Schedule</string>
+    <string name="enter_task_name">Enter Task Name</string>
+    <string name="date_format">DD/MM/YYYY</string>
+</resources>
